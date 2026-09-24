@@ -1,0 +1,67 @@
+.student-profile {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f1e8;
+  color: #29251f;
+  font-family: Arial, sans-serif;
+}
+
+.student-profile h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.student-profile p {
+  color: #6b6257;
+  margin-bottom: 25px;
+}
+
+.profile-card {
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h2 {
+  margin-bottom: 20px;
+}
+
+.profile-card label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.profile-card input,
+.profile-card select,
+.profile-card textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8d0c4;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.profile-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.profile-card button {
+  margin-top: 25px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #4d604b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-card button:hover {
+  background: #374934;
+}
