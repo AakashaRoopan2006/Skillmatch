@@ -19,11 +19,11 @@ const [newJob, setNewJob] = useState({
     const loadData = async () => {
       try {
         const studentResponse = await fetch(
-          "http://127.0.0.1:8000/students"
+          "https://skillmatch-s7cj.onrender.com/students"
         );
 
         const jobResponse = await fetch(
-          "http://127.0.0.1:8000/jobs"
+          "https://skillmatch-s7cj.onrender.com/jobs"
         );
 
         if (studentResponse.ok) {
@@ -407,7 +407,7 @@ const jobData = {
 
 try {
   const response = await fetch(
-    "http://127.0.0.1:8000/jobs",
+    "https://skillmatch-s7cj.onrender.com/jobs",
     {
       method: "POST",
       headers: {

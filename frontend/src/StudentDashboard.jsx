@@ -38,7 +38,7 @@ useEffect(() => {
     try {
       // Load available jobs
       const jobsResponse = await fetch(
-        "http://127.0.0.1:8000/jobs"
+        "https://skillmatch-s7cj.onrender.com/jobs"
       );
 
       const jobsData = await jobsResponse.json();
@@ -46,7 +46,7 @@ useEffect(() => {
 
       // Load saved jobs from PostgreSQL
       const savedResponse = await fetch(
-        "http://127.0.0.1:8000/saved-jobs"
+        "https://skillmatch-s7cj.onrender.com/saved-jobs"
       );
 
       const savedData = await savedResponse.json();
@@ -239,7 +239,7 @@ const toggleSaveJob = async (job) => {
     if (alreadySaved) {
       // Remove from PostgreSQL
       await fetch(
-        `http://127.0.0.1:8000/saved-jobs/${job.id}`,
+        `https://skillmatch-s7cj.onrender.com/saved-jobs/${job.id}`,
         {
           method: "DELETE",
         }
@@ -254,7 +254,7 @@ const toggleSaveJob = async (job) => {
     } else {
       // Save to PostgreSQL
       const response = await fetch(
-        "http://127.0.0.1:8000/saved-jobs",
+        "https://skillmatch-s7cj.onrender.com/saved-jobs",
         {
           method: "POST",
           headers: {
